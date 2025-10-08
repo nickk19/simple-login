@@ -1,0 +1,82 @@
+/* Impostazioni di base per tutta la pagina */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Noto Sans Mono', monospace;
+    font-variation-settings: "wght" 600
+}
+
+body {
+    background: linear-gradient(135deg, #a0c4ff, #8a88c7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Stile del box di login bianco */
+.login-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px; /* Angoli arrotondati */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombra per dare profondità */
+    width: 320px;
+    text-align: center; /* Centra il titolo e il link "New Account" */
+}
+
+/* Stile del titolo "Login" */
+.login-container h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-variation-settings: "wght" 700; /* Lo rendiamo più grassetto */
+}
+
+/* Stile del form per organizzare gli elementi */
+.login-container form {
+    display: flex;
+    flex-direction: column; /* Mette gli elementi uno sotto l'altro */
+}
+
+/* Stile delle etichette "Username" e "Password" */
+.login-container label {
+    text-align: left; /* Allinea il testo a sinistra */
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+/* Stile dei campi di testo */
+.login-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Noto Sans Mono', monospace; /* Eredita il font */
+}
+
+/* Stile del pulsante "SignIn" */
+.login-container button {
+    background-color: #3498db; /* Un bel blu chiaro */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer; /* Cambia il cursore del mouse quando ci passi sopra */
+    font-size: 1.1em;
+    font-variation-settings: "wght" 600; /* Usiamo il peso che hai indicato */
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Stile per il link "New Account" */
+.login-container a {
+    color: #3498db; /* Stesso blu del pulsante */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    font-size: 0.9em;
+}
+
+/* Aggiungiamo di nuovo la sottolineatura quando passiamo il mouse sul link */
+.login-container a:hover {
+    text-decoration: underline;
+}
